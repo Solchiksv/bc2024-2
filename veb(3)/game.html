@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Game</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+      display: block;
+      margin: 0 auto;
+    }
+    .score-container {
+      text-align: center;
+      color: black; 
+    }
+    .score {
+      font: 16px Arial;
+      color: black; 
+      display: none; 
+    }
+    #gameCanvas {
+      background-color: #eb82eb; 
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="480" height="320"></canvas>
+  <div class="score-container">
+    <div id="bestScore" class="score">Best Score: </div>
+    <div id="worstScore" class="score">Worst Score: </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

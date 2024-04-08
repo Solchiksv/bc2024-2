@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитування</title>
+</head>
+<body>
+    <form id="surveyForm">
+        <label for="faculty">На якому факультеті ви навчаєтесь?</label><br>
+        <select id="faculty" name="faculty">
+            <option value="economic">Економічний</option>
+            <option value="electronics">Електроніки та комп'ютерних технологій</option>
+            <option value="appliedMath">Прикладної математики та інформатики</option>
+        </select><br>
+    
+        <fieldset>
+            <legend>Вкажіть групу:</legend>
+            <input type="checkbox" id="groupFEI" name="group" value="FEI">
+            <label for="groupFEI">ФЕІ</label><br>
+            <input type="checkbox" id="groupFEP" name="group" value="FEP">
+            <label for="groupFEP">ФЕП</label><br>
+            <input type="checkbox" id="groupFEL" name="group" value="FEL">
+            <label for="groupFEL">ФЕЛ</label><br>
+        </fieldset>
+    
+        <label for="interviewTime">Виберіть зручний час для проходження співбесіди:</label><br>
+        <input type="datetime-local" id="interviewTime" name="interviewTime"><br>
+    
+        <label for="averageGrade">Вкажіть середній бал:</label><br>
+        <input type="number" id="averageGrade" name="averageGrade" min="0" max="5"><br>
+    
+        <label for="course">Вкажіть на якому курсі ви навчаєтесь:</label><br>
+        <select id="course" name="course">
+            <option value="1">1 курс</option>
+            <option value="2">2 курс</option>
+            <option value="3">3 курс</option>
+            <option value="4">4 курс</option>
+        </select><br>
+    
+        <fieldset>
+            <legend>На якій формі навчання ви навчаєтесь?</legend>
+            <input type="radio" id="studyFormFullTime" name="studyForm" value="fullTime">
+            <label for="studyFormFullTime">Денна</label><br>
+            <input type="radio" id="studyFormPartTime" name="studyForm" value="partTime">
+            <label for="studyFormPartTime">Заочна</label><br>
+        </fieldset>
+    
+        <label for="groupNumber">Вкажіть номер групи:</label><br>
+        <select id="groupNumber" name="groupNumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select><br>
+    
+        <button type="submit">Відправити</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
